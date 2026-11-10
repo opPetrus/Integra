@@ -22,16 +22,11 @@ Aulas, exercícios, dicas e gabaritos estão em `content/`. Soluções não apar
 - `npm run build` compila a versão local.
 - `npm run build:pages` compila com o caminho-base do GitHub Pages (`/Integra/`).
 
-## Publicar no GitHub Pages
+## GitHub Pages
 
-O workflow `.github/workflows/deploy.yml` compila para `/Integra/` e publica a branch `main` via GitHub Actions. Para publicar:
+O repositório público [`opPetrus/Integra`](https://github.com/opPetrus/Integra) publica este app em [oppetrus.github.io/Integra](https://oppetrus.github.io/Integra/). A workflow `.github/workflows/deploy.yml` compila para `/Integra/` e publica a branch `main` via GitHub Actions; novos pushes em `main` iniciam um novo deploy.
 
-1. Crie um repositório GitHub independente chamado `Integra`.
-2. Na pasta deste projeto, inicialize o Git se necessário, faça o commit e envie a branch `main` para esse repositório.
-3. Em **Settings → Pages**, selecione **GitHub Actions** como origem.
-4. Acompanhe **Actions**; o site estará publicado quando o workflow terminar com sucesso.
-
-O projeto ainda não está conectado nem publicado no GitHub. O workflow e este guia estão prontos para essa etapa.
+Para verificar uma publicação, abra a aba **Actions** do repositório e confira se a execução mais recente terminou com sucesso.
 
 ## Privacidade e escopo
 

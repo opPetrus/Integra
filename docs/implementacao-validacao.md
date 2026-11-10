@@ -22,7 +22,7 @@ Data: 9 de novembro de 2026
 
 ## Fase 6 — publicação
 
-O workflow `.github/workflows/deploy.yml` está configurado para compilar e publicar pelo GitHub Pages quando a branch `main` for enviada. A publicação não foi executada: este projeto ainda não tem repositório GitHub próprio conectado. O [README](../README.md) contém o guia para criar o repositório independente `Integra`, enviar a branch e ativar Pages por GitHub Actions.
+O repositório público [`opPetrus/Integra`](https://github.com/opPetrus/Integra) está configurado para GitHub Actions e o site está publicado em [https://oppetrus.github.io/Integra/](https://oppetrus.github.io/Integra/). A primeira execução falhou porque Pages ainda estava desativado; depois da configuração, a tentativa 2 da workflow concluiu com sucesso: build, Setup Pages, upload e deploy. Consulte a [execução de deploy](https://github.com/opPetrus/Integra/actions/runs/42740330991).
 
 ## Limites conhecidos
 
