@@ -1,0 +1,798 @@
+{
+  "schemaVersion": 1,
+  "courseTitle": "Integra — Cálculo Integral",
+  "contentStatus": "phase3-mathematically-and-pedagogically-reviewed",
+  "lessonFile": "curso.md",
+  "exerciseFile": "exercicios.md",
+  "solutionFile": "gabarito.md",
+  "solutionsHiddenByDefault": true,
+  "exerciseCount": 42,
+  "modules": [
+    {
+      "id": "M0",
+      "title": "Diagnóstico e pré-requisitos",
+      "exerciseIds": [
+        "E-M0-1",
+        "E-M0-2",
+        "E-M0-3"
+      ],
+      "sourceExercises": "Lista 4, 30–47 (revisão dirigida)"
+    },
+    {
+      "id": "M1",
+      "title": "Integral de Riemann e interpretação",
+      "exerciseIds": [
+        "E-M1-1",
+        "E-M1-2",
+        "E-M1-3"
+      ],
+      "sourceExercises": "Lista 4, 22–25 e 48"
+    },
+    {
+      "id": "M2",
+      "title": "Primitivas e Teorema Fundamental",
+      "exerciseIds": [
+        "E-M2-1",
+        "E-M2-2",
+        "E-M2-3"
+      ],
+      "sourceExercises": "Lista 4, 26–28 e 48"
+    },
+    {
+      "id": "M3",
+      "title": "Reconhecimento de padrões e substituição",
+      "exerciseIds": [
+        "E-M3-1",
+        "E-M3-2",
+        "E-M3-3"
+      ],
+      "sourceExercises": "Lista 4, 1–11, 14–18, 29 e 54–57"
+    },
+    {
+      "id": "M4",
+      "title": "Integração por partes e redução",
+      "exerciseIds": [
+        "E-M4-1",
+        "E-M4-2",
+        "E-M4-3",
+        "E-M4-4",
+        "E-M4-5"
+      ],
+      "sourceExercises": "Lista 4, 12–13, 16–21 e 49"
+    },
+    {
+      "id": "M5",
+      "title": "Logaritmo, exponencial e hiperbólicas",
+      "exerciseIds": [
+        "E-M5-1",
+        "E-M5-2",
+        "E-M5-3",
+        "E-M5-4"
+      ],
+      "sourceExercises": "Lista 4, 48, 54–67 e 73–75"
+    },
+    {
+      "id": "M6",
+      "title": "Formas especiais e frações parciais",
+      "exerciseIds": [
+        "E-M6-1",
+        "E-M6-2",
+        "E-M6-3",
+        "E-M6-4",
+        "E-M6-5",
+        "E-M6-6"
+      ],
+      "sourceExercises": "Lista 4, 4–5, 18–21 e 68–75"
+    },
+    {
+      "id": "M7",
+      "title": "Áreas cartesianas e polares",
+      "exerciseIds": [
+        "E-M7-1",
+        "E-M7-2",
+        "E-M7-3",
+        "E-M7-4"
+      ],
+      "sourceExercises": "Lista 4, 50–53 e 76–80"
+    },
+    {
+      "id": "M8",
+      "title": "Comprimento, rotação e massa",
+      "exerciseIds": [
+        "E-M8-1",
+        "E-M8-2",
+        "E-M8-3",
+        "E-M8-4",
+        "E-M8-5"
+      ],
+      "sourceExercises": "Lista 4, 81–92"
+    },
+    {
+      "id": "M9",
+      "title": "Integrais impróprias",
+      "exerciseIds": [
+        "E-M9-1",
+        "E-M9-2",
+        "E-M9-3",
+        "E-M9-4",
+        "E-M9-5",
+        "E-M9-6"
+      ],
+      "sourceExercises": "Lista 4, 93–116"
+    },
+    {
+      "id": "M10",
+      "title": "Revisão cumulativa e simulados",
+      "exerciseIds": [],
+      "sourceExercises": "Seleções cumulativas do banco"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "E-M0-1",
+      "module": "M0",
+      "topic": "Derivada de produto e verificação de primitiva",
+      "technique": "regra do produto; regra da cadeia",
+      "difficulty": "básica",
+      "type": "pré-requisito/cálculo",
+      "origin": "autoral; alinhado à Lista 4, 30–38",
+      "prerequisites": [
+        "derivada de produto",
+        "logaritmo"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M0-2",
+      "module": "M0",
+      "topic": "Limite notável composto",
+      "technique": "limites fundamentais",
+      "difficulty": "intermediária",
+      "type": "pré-requisito/limite",
+      "origin": "autoral; alinhado à Lista 4, 39–47",
+      "prerequisites": [
+        "limites trigonométricos",
+        "limites exponenciais"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M0-3",
+      "module": "M0",
+      "topic": "Domínio e derivada de logaritmo composto",
+      "technique": "domínio; cadeia",
+      "difficulty": "avançada",
+      "type": "pré-requisito/domínio",
+      "origin": "autoral; alinhado à Lista 4, 30–47",
+      "prerequisites": [
+        "domínio de ln",
+        "regra da cadeia"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M1-1",
+      "module": "M1",
+      "topic": "Mudança finita de valores",
+      "technique": "somas de Darboux",
+      "difficulty": "básica",
+      "type": "conceito",
+      "origin": "autoral; Lista 4, 22–25",
+      "prerequisites": [
+        "funções limitadas",
+        "partições"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M1-2",
+      "module": "M1",
+      "topic": "Somas inferior e superior",
+      "technique": "somas de Riemann/Darboux",
+      "difficulty": "intermediária",
+      "type": "cálculo e conceito",
+      "origin": "autoral; Lista 4, 22–25 e 48",
+      "prerequisites": [
+        "soma de quadrados",
+        "partições"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M1-3",
+      "module": "M1",
+      "topic": "Paridade e área assinada",
+      "technique": "simetria",
+      "difficulty": "avançada",
+      "type": "conceito e aplicação",
+      "origin": "autoral; Lista 4, 22–25",
+      "prerequisites": [
+        "funções pares e ímpares"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M2-1",
+      "module": "M2",
+      "topic": "Teorema Fundamental e avaliação",
+      "technique": "primitiva; extremos",
+      "difficulty": "básica",
+      "type": "integral definida",
+      "origin": "autoral; Lista 4, 26–28",
+      "prerequisites": [
+        "substituição simples",
+        "logaritmo"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M2-2",
+      "module": "M2",
+      "topic": "Derivada de função acumulada",
+      "technique": "Teorema Fundamental; cadeia",
+      "difficulty": "intermediária",
+      "type": "conceito/cálculo",
+      "origin": "autoral; Lista 4, 26–28",
+      "prerequisites": [
+        "limite variável",
+        "regra da cadeia"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M2-3",
+      "module": "M2",
+      "topic": "Valor médio para integrais",
+      "technique": "média integral; resolução algébrica",
+      "difficulty": "avançada",
+      "type": "teorema",
+      "origin": "autoral; seção 4.3",
+      "prerequisites": [
+        "integral definida",
+        "continuidade"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M3-1",
+      "module": "M3",
+      "topic": "Padrão g'/g",
+      "technique": "substituição",
+      "difficulty": "básica",
+      "type": "primitiva",
+      "origin": "autoral; Lista 4, 1–11",
+      "prerequisites": [
+        "derivada de potência",
+        "logaritmo"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M3-2",
+      "module": "M3",
+      "topic": "Potência de composição definida",
+      "technique": "substituição com mudança de limites",
+      "difficulty": "intermediária",
+      "type": "integral definida",
+      "origin": "autoral; Lista 4, 1–11",
+      "prerequisites": [
+        "potências",
+        "mudança de variável"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M3-3",
+      "module": "M3",
+      "topic": "Radical e orientação da substituição",
+      "technique": "substituição com limites invertidos",
+      "difficulty": "avançada",
+      "type": "integral definida",
+      "origin": "autoral; Lista 4, 14–18 e 68–75",
+      "prerequisites": [
+        "radicais quadráticos",
+        "limites definidos"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M4-1",
+      "module": "M4",
+      "topic": "Polinômio vezes cosseno",
+      "technique": "integração por partes",
+      "difficulty": "básica",
+      "type": "primitiva",
+      "origin": "autoral; Lista 4, 12–13",
+      "prerequisites": [
+        "primitivas trigonométricas"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M4-2",
+      "module": "M4",
+      "topic": "Integral cíclica exponencial-trigonométrica",
+      "technique": "partes repetidas",
+      "difficulty": "intermediária",
+      "type": "primitiva",
+      "origin": "autoral; Lista 4, 49",
+      "prerequisites": [
+        "integração por partes",
+        "álgebra"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M4-3",
+      "module": "M4",
+      "topic": "Redução de potência do cosseno",
+      "technique": "integração por partes; identidade trigonométrica",
+      "difficulty": "avançada",
+      "type": "demonstração",
+      "origin": "autoral; Lista 4, 19–21",
+      "prerequisites": [
+        "integração por partes",
+        "identidades trigonométricas"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M5-1",
+      "module": "M5",
+      "topic": "Integral de logaritmo",
+      "technique": "integração por partes",
+      "difficulty": "básica",
+      "type": "primitiva com domínio",
+      "origin": "autoral; Lista 4, 54–67",
+      "prerequisites": [
+        "logaritmo",
+        "integração por partes"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M5-2",
+      "module": "M5",
+      "topic": "Exponencial de base a",
+      "technique": "reconhecimento e verificação",
+      "difficulty": "intermediária",
+      "type": "primitiva e hipótese",
+      "origin": "autoral; Lista 4, 58–67",
+      "prerequisites": [
+        "derivada de a^x",
+        "logaritmo natural"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M5-3",
+      "module": "M5",
+      "topic": "Fórmula de adição hiperbólica",
+      "technique": "auditoria por caso e definição exponencial",
+      "difficulty": "avançada",
+      "type": "detecção de erro de fonte",
+      "origin": "autoral; confere Lista 4, 59(d)",
+      "prerequisites": [
+        "sinh",
+        "cosh",
+        "fórmulas de adição"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M6-1",
+      "module": "M6",
+      "topic": "Radical a²-x²",
+      "technique": "substituição direta/algébrica",
+      "difficulty": "básica",
+      "type": "primitiva e domínio",
+      "origin": "autoral; Lista 4, 68–75",
+      "prerequisites": [
+        "radicais",
+        "regra da cadeia"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M6-2",
+      "module": "M6",
+      "topic": "Frações parciais lineares",
+      "technique": "fatoração e frações parciais",
+      "difficulty": "intermediária",
+      "type": "primitiva racional",
+      "origin": "autoral; Lista 4, 68–75",
+      "prerequisites": [
+        "fatoração",
+        "logaritmo"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M6-3",
+      "module": "M6",
+      "topic": "Quadrado completo",
+      "technique": "completar quadrado; arctan",
+      "difficulty": "avançada",
+      "type": "primitiva racional",
+      "origin": "autoral; seção 4.5 e Lista 4, 68–75",
+      "prerequisites": [
+        "completar quadrado",
+        "arctan"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M7-1",
+      "module": "M7",
+      "topic": "Área entre reta e parábola",
+      "technique": "cortes verticais",
+      "difficulty": "básica",
+      "type": "aplicação geométrica",
+      "origin": "autoral; Lista 4, 50–53 e 76–80",
+      "prerequisites": [
+        "interseções",
+        "integral definida"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M7-2",
+      "module": "M7",
+      "topic": "Área sob parábola simétrica",
+      "technique": "simetria; área cartesiana",
+      "difficulty": "intermediária",
+      "type": "aplicação geométrica",
+      "origin": "autoral; Lista 4, 50–53",
+      "prerequisites": [
+        "zeros de função",
+        "primitiva polinomial"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M7-3",
+      "module": "M7",
+      "topic": "Área de cardioide",
+      "technique": "área polar",
+      "difficulty": "avançada",
+      "type": "aplicação geométrica",
+      "origin": "autoral; Lista 4, 76–80",
+      "prerequisites": [
+        "fórmula polar",
+        "identidades trigonométricas"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M8-1",
+      "module": "M8",
+      "topic": "Comprimento de arco de gráfico",
+      "technique": "fórmula de comprimento; integral padrão",
+      "difficulty": "básica",
+      "type": "aplicação geométrica",
+      "origin": "autoral; Lista 4, 81–84",
+      "prerequisites": [
+        "derivada",
+        "radical quadrático"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M8-2",
+      "module": "M8",
+      "topic": "Volume em torno do eixo y",
+      "technique": "arruelas horizontais",
+      "difficulty": "intermediária",
+      "type": "aplicação geométrica",
+      "origin": "autoral; Lista 4, 88–91",
+      "prerequisites": [
+        "funções inversas",
+        "volume por seções"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M8-3",
+      "module": "M8",
+      "topic": "Massa em densidade variável",
+      "technique": "densidade vezes seção",
+      "difficulty": "avançada",
+      "type": "aplicação física",
+      "origin": "autoral; Lista 4, 92",
+      "prerequisites": [
+        "integral definida",
+        "volume de camada"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M9-1",
+      "module": "M9",
+      "topic": "Cauda p em infinito",
+      "technique": "limite impróprio",
+      "difficulty": "básica",
+      "type": "convergência e cálculo",
+      "origin": "autoral; Lista 4, 93–110",
+      "prerequisites": [
+        "limites no infinito",
+        "potências"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M9-2",
+      "module": "M9",
+      "topic": "Singularidade no extremo",
+      "technique": "limite unilateral; teste p",
+      "difficulty": "intermediária",
+      "type": "convergência e cálculo",
+      "origin": "autoral; Lista 4, 93–110",
+      "prerequisites": [
+        "limites laterais",
+        "potências"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M9-3",
+      "module": "M9",
+      "topic": "Convergência condicional",
+      "technique": "partes; comparação; oscilação",
+      "difficulty": "avançada",
+      "type": "convergência",
+      "origin": "autoral; conceitos da Lista 4, 93–116",
+      "prerequisites": [
+        "integração por partes",
+        "comparação de integrais"
+      ],
+      "maxScore": 2,
+      "reviewStatus": "phase3-reviewed"
+    },
+    {
+      "id": "E-M4-4",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Potência trigonométrica com expoente ímpar",
+      "type": "integral definida",
+      "prerequisites": [
+        "identidade fundamental trigonométrica",
+        "substituição"
+      ],
+      "origin": "autoral; Lista 4, 19–21",
+      "difficulty": "intermediária",
+      "technique": "substituição e identidade trigonométrica",
+      "module": "M4",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M4-5",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Potência trigonométrica par",
+      "type": "primitiva",
+      "prerequisites": [
+        "identidade de meio ângulo"
+      ],
+      "origin": "autoral; Lista 4, 19–21",
+      "difficulty": "avançada",
+      "technique": "meio ângulo e integração",
+      "module": "M4",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M5-4",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Primitiva com raiz hiperbólica",
+      "type": "primitiva e verificação",
+      "prerequisites": [
+        "função arsinh",
+        "substituição"
+      ],
+      "origin": "autoral; seção 4.4 e Lista 4, 65–67",
+      "difficulty": "avançada",
+      "technique": "substituição hiperbólica; arsinh",
+      "module": "M5",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M6-4",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Radical quadrático definido",
+      "type": "integral definida/aplicação",
+      "prerequisites": [
+        "x=a sin t",
+        "área de círculo"
+      ],
+      "origin": "autoral; Lista 4, 68–75",
+      "difficulty": "intermediária",
+      "technique": "substituição trigonométrica",
+      "module": "M6",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M6-5",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Racional com quadrática irredutível",
+      "type": "primitiva racional",
+      "prerequisites": [
+        "logaritmo",
+        "arctan"
+      ],
+      "origin": "autoral; seção 4.5 e Lista 4, 68–75",
+      "difficulty": "avançada",
+      "technique": "separação logaritmo e arctan",
+      "module": "M6",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M6-6",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Radical x²+a²",
+      "type": "integral definida",
+      "prerequisites": [
+        "funções hiperbólicas",
+        "mudança de limites"
+      ],
+      "origin": "autoral; seção 4.5 e Lista 4, 68–75",
+      "difficulty": "avançada",
+      "technique": "substituição hiperbólica",
+      "module": "M6",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M7-4",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Área por fatias horizontais",
+      "type": "aplicação geométrica",
+      "prerequisites": [
+        "inversas de funções",
+        "interseções"
+      ],
+      "origin": "autoral; Lista 4, 50–53",
+      "difficulty": "avançada",
+      "technique": "inversão de fronteiras e divisão por mudança de ordem",
+      "module": "M7",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M8-4",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Comprimento paramétrico",
+      "type": "aplicação geométrica",
+      "prerequisites": [
+        "derivadas paramétricas",
+        "raio de círculo"
+      ],
+      "origin": "autoral; Lista 4, 81–84",
+      "difficulty": "intermediária",
+      "technique": "integral da velocidade",
+      "module": "M8",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M8-5",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Superfície de revolução",
+      "type": "aplicação geométrica",
+      "prerequisites": [
+        "comprimento de arco",
+        "rotação"
+      ],
+      "origin": "autoral; Lista 4, 85–87",
+      "difficulty": "avançada",
+      "technique": "2π vezes raio vezes arco",
+      "module": "M8",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M9-4",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Singularidade interior e valor principal",
+      "type": "definição e conceito",
+      "prerequisites": [
+        "logaritmo",
+        "limites laterais"
+      ],
+      "origin": "autoral; Lista 4, 93–116, especialmente 111",
+      "difficulty": "intermediária",
+      "technique": "limites laterais separados",
+      "module": "M9",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M9-5",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Comparação de integrando oscilatório",
+      "type": "convergência",
+      "prerequisites": [
+        "cotas de seno",
+        "integral p"
+      ],
+      "origin": "autoral; Lista 4, 93–116",
+      "difficulty": "intermediária",
+      "technique": "comparação direta",
+      "module": "M9",
+      "maxScore": 2
+    },
+    {
+      "id": "E-M9-6",
+      "reviewStatus": "phase3-reviewed",
+      "topic": "Critério p em zero e infinito",
+      "type": "classificação paramétrica",
+      "prerequisites": [
+        "limites impróprios",
+        "potências"
+      ],
+      "origin": "autoral; Lista 4, 93–110",
+      "difficulty": "avançada",
+      "technique": "teste p",
+      "module": "M9",
+      "maxScore": 2
+    }
+  ],
+  "mockExams": [
+    {
+      "id": "A",
+      "durationMinutes": 50,
+      "questionIds": [
+        "E-M1-2",
+        "E-M3-3",
+        "E-M6-2",
+        "E-M7-1",
+        "E-M9-2"
+      ],
+      "pointsPerQuestion": 2
+    },
+    {
+      "id": "B",
+      "durationMinutes": 50,
+      "questionIds": [
+        "E-M2-3",
+        "E-M4-2",
+        "E-M5-3",
+        "E-M8-2",
+        "E-M9-3"
+      ],
+      "pointsPerQuestion": 2
+    }
+  ],
+  "sourceErrata": [
+    {
+      "sourceExercise": 51,
+      "status": "confirm-with-professor",
+      "reason": "The printed line x=8 conflicts with vertical asymptotes of tan x on the indicated interval."
+    },
+    {
+      "sourceExercise": "59(d)",
+      "status": "confirm-with-professor",
+      "reason": "The printed hyperbolic addition identity repeats a product; no silent correction."
+    }
+  ]
+}
